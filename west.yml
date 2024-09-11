@@ -1,0 +1,26 @@
+manifest:
+  version: "0.10"
+  remotes:
+    - name: ncs
+      url-base: https://github.com/SamBouu/nrf91_windows.git
+
+  projects:
+    - name: nrf
+      remote: ncs
+      revision: v2.7.0
+      import: true
+    - name: zephyr
+      remote: ncs
+      revision: v3.4.99-ncs1
+      import: true
+    - name: mcuboot
+      remote: ncs
+      revision: v2.0.99-ncs2
+      import: true
+    - name: nrfxlib
+      remote: ncs
+      revision: v2.7.0
+      import: true
+
+  self:
+    path: nrf
